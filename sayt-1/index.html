@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap - Learning</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    .head-1 {
+      background: url(https://fdn.gsmarena.com/imgroot/reviews/22/apple-iphone-14-pro-max/lifestyle/-1200w5/gsmarena_020.jpg)center/cover no-repeat;
+      width: 39%;
+      height: 49%;
+      border-radius: 50%;
+    }
+
+    .head-2 {
+      background: url(https://img.pconline.com.cn/images/autovideo/autovideo/201911/27/15748495577254190.jpg)center/cover no-repeat;
+      width: 39%;
+      height: 49%;
+      border-radius: 50%;
+    }
+
+    .head-3 {
+      background: url(https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/iphone_15_pro_max_2.jpg)center/cover no-repeat;
+      width: 39%;
+      height: 49%;
+      border-radius: 50%;
+    }
+
+    .photo-1 img {
+      height: 100%;
+      width: 100%;
+
+    }
+
+    .photo-2 img {
+      margin-top: 100px;
+      height: 100%;
+      width: 100%;
+
+    }
+      /* footer */
+   .h:hover {
+    color: #1020cc;
+    text-decoration: none;
+  }
+  
+  /* footer */
+  </style>
+</head>
+
+<body>
+
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Carousel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="prising.html">Prising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="album.html">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="slider"></div>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-2"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-3"></div>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="head-1 mx-auto"></div>
+          <h2 class="fw-normal">Heading</h2>
+          <p>Some representative for the three columns of text below the carousel. This is the first column.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="head-2 mx-auto"></div>
+          <h2 class="fw-normal">Heading</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
+          </p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="head-3 mx-auto"></div>
+          <h2 class="fw-normal">Heading</h2>
+          <p>And lastly vdvvdsv this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See
+              for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+            layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <div class="photo-1">
+            <img src="https://isensestore.in/wp-content/uploads/2022/09/iphone_14_pro_space_black_iSense_6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+              class="text-body-secondary">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+            intended to be actually read, simply here to give you a better view of what this would look like with some
+            actual content. Your content.</p>
+        </div>
+        <div class="col-md-5 ">
+          <div class="photo-2">
+            <img src="https://cdn.karar.com/other/2023/03/04/iphone-14-check-out-what-is-new-in-apples-new-phone.jpg"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="https://www.pngplay.com/wp-content/uploads/3/Apple-Logo-Transparent-PNG.png" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Cool stuff</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Random feature</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Team feature</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Stuff for developers</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Another one</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Last time</div></a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Resource</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Resource name</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Another resource</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Final resource</div></a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Team</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Locations</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Privacy</div></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><div class="h">Terms</div></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
